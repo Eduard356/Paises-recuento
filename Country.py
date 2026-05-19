@@ -1,4 +1,4 @@
-class Country:
+class country:
 
     def __init__(self, data):
 
@@ -14,11 +14,11 @@ class Country:
     def __str__(self):
 
         return (
-            f"País: {self.nombre}\n"
-            f"Capital: {self.capital}\n"
-            f"Población: {self.poblacion:,}\n"
-            f"Área: {self.area:,} km²\n"
-            f"Región: {self.region}\n"
+            f"País: {self.nombre}"
+            f"Capital: {self.capital}"
+            f"Población: {self.poblacion:,}"
+            f"Área: {self.area:,} km²"
+            f"Región: {self.region}"
         )
 
     def density(self):
