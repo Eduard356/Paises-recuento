@@ -32,3 +32,20 @@ class CountryAPI:
             )
 
             return None
+        
+    def by_names(self, nombres):
+
+        with ThreadPoolExecutor() as executor:
+
+            paises = list(
+                executor.map(
+                    self.obtener_pais,
+                    nombres
+                )
+            )
+
+        return [
+            pais
+            for pais in paises
+            if pais is not None
+        ]
