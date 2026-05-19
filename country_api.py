@@ -2,7 +2,7 @@ import requests
 
 from concurrent.futures import ThreadPoolExecutor
 
-from country import Country
+from country import country
 
 
 class CountryAPI:
@@ -22,7 +22,7 @@ class CountryAPI:
 
             datos = respuesta.json()[0]
 
-            return Country(datos)
+            return country(datos)
 
         except Exception as e:
 
