@@ -2,7 +2,7 @@ import requests
 
 from concurrent.futures import ThreadPoolExecutor
 
-from country import country
+from Country import country
 
 
 class CountryAPI:
